@@ -115,8 +115,72 @@
 }
 
 .section1-botao:hover {
-    background-color: #fff;
+    background-color: #e0dddd;
     border-radius: 8px;
     text-decoration: none;
     color: #E8111A;
+}
+/* Section 5 */
+.section5{
+    background-image: url('assents/banner02.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section2-titulo,.section3-titulo,.section4-titulo,.section5-titulo{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 15px;
+    max-width: 37.5em;
+    color: #9E050B;
+}
+.section5-botao {
+    display: inline-block;
+    padding: .3em 2em;
+   margin-top: 1em;
+    background-color: #E8111A;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3em;
+}
+.section5-botao:hover {
+    background-color: #e0dddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #E8111A;
+}
+::placeholder{
+    font-size: 1.1em;
+    padding: 15px;
+}
+/* Footer */
+footer{
+    background: #9E050B;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.direitosReservados {
+    color: #ffffff;
+    width: 30%;
+    margin-left: 20px; 
+    
+
+  }
+.imagesfooter {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.termos a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 30px;
 }
