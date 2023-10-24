@@ -103,6 +103,15 @@ main {
     padding: 0 1rem;
 }
 
+h2 {
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 16px;
+    color: #777;
+}
+
 /* Section 1  - Banner inicial */
 
 .section1-conteudo {
@@ -153,6 +162,12 @@ main {
 
 /* container das comidas mais procuradas */
 
+.areaSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     background-color: #E2D8D8;
@@ -169,41 +184,20 @@ main {
     height: 150px;
 }
 
-figure {
+article figure {
     display: flex;
 }
 
-.textContainer {
-    padding: 20px;
-    margin: 10px;
-}
-
-.descricao {
+article figure .descricao {
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    padding-left: 20px;
-    margin-top: none;
+    padding-left: 2%;
 }
 
-
-h5 {
-    font-size: 16px;
-    color: #777;
-}
-
-h2 {
-    font-weight: 500;
-}
-
-.areaSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Section 3 - Restaurantes */
+/* Restaurantes */
 
 .icones-restaurantes {
     display: flex;
@@ -260,19 +254,18 @@ h2 {
     padding: 2em;
     width: 200px;
     height: 60px;
-    background-color: #E8111A;
+    background-color: #d8323b;
     border-radius: 8px;
     text-decoration: none;
-    color: #ffffff;
+    color: #e0dddd;
     margin-bottom: 3em;
     margin-right: 3em;
 }
 
 .cupom-botao:hover {
-    background-color: #e0dddd;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #E8111A;
+    font-weight: 500;
+    background-color: #E8111A;
+    color: #ffffff;
 }
 
 /* Section 5 */
@@ -297,28 +290,31 @@ h2 {
     color: #9E050B;
 }
 
-.inputs-form input {
-    padding: 0.5rem;
-    border: 1px solid black;
+.section5 input, .section5 textarea {
+    background-color: #ebeaea;
     border-radius: 0.2rem;
+    border: 1px solid rgb(168, 70, 70);
+}
+
+.section5 input{
+    padding: 0.5rem;
 }
 
 .section5-botao {
     display: inline-block;
     padding: .5em 3em;
     margin-top: 1em;
-    background-color: #E8111A;
+    background-color: #d8323b;
     border-radius: 8px;
     text-decoration: none;
-    color: #ffffff;
+    color: #e0dddd;
     margin-bottom: 3em;
 }
 
 .section5-botao:hover {
-    background-color: #e0dddd;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #E8111A;
+    background-color: #E8111A;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 ::placeholder {
@@ -390,11 +386,11 @@ footer .contatos {
 } */
 
 @media(max-width:895px) {
-    footer .direitosReservados h6{
+    footer .direitosReservados h6 {
         font-size: 0.6rem;
     }
 
-    footer .termos a{
+    footer .termos a {
         font-size: 0.8rem;
     }
 }
