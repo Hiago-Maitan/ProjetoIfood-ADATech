@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Delivery de Comida e Mercado - ifood</title>
+    <title>Delivery de Comida e Mercado - iFood</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="shortcut icon" href="assents/icon_Ifood.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assents/ifood-icone.png" type="image/x-icon">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="head">
@@ -33,10 +39,10 @@
                 </a>
             </div>
         </div>
-        
+
         <nav class="nav">
             <a href="https://www.ifood.com.br/" target="_blank">
-            <img src="./assents/logo-ifood.svg" class="imgNav" alt="ifood logo">
+                <img src="./assents/logo-ifood.svg" class="imgNav" alt="ifood logo">
             </a>
             <div class="containerLinks">
                 <ul>
@@ -57,18 +63,21 @@
         <section class="section1">
             <div class="section1-conteudo">
                 <h1 class="section1-titulo">
-                    Não fique com fome! 
+                    Não fique com fome!
                 </h1>
                 <p class="section1-paragrafo">
-                    Navegue pelo novo site do iFood, escolhendo os melhores pratos e aproveitando as novas promoções e cupons disponíveis por tempo limitado.
+                    Navegue pelo novo site do iFood, escolhendo os melhores pratos e aproveitando as novas promoções e
+                    cupons disponíveis por tempo limitado.
                 </p>
                 <a href="#" target="_blank" class="section1-botao">Ver Novo Catálogo</a>
             </div>
-        </section><br>
+        </section>
+
+        <!-- Comidas mais procuradas -->
 
         <section id="comidas" class="section2">
             <h2 class="section2-titulo">
-            Comidas mais procuradas
+                Comidas mais procuradas
             </h2>
             <div>
                 <div>
@@ -82,10 +91,11 @@
             </div>
         </section>
 
+        <!-- Restaurantes -->
 
         <section id="restaurantes" class="section3">
             <h2 class="section3-titulo">
-            Melhores Restaurantes
+                Melhores Restaurantes
             </h2>
             <div class="restaurantes">
                 <div class="icones-restaurantes">
@@ -104,7 +114,7 @@
                     <a href="https://www.outback.com.br/" target="_blank">
                         <img src="./assents/outback.svg" alt="">
                     </a>
-                  </div>
+                </div>
                 <div class="ver-mais">
                     <a href="#">Ver mais</a>
                 </div>
@@ -112,53 +122,57 @@
             </div>
         </section>
 
-
+        <!-- Cupons -->
         <section id="cupons" class="section4">
-            <h2 class="section4-titulo">
-                Cupons
-            </h2>
+            <h2 class="section4-titulo">Cupons</h2>
             <div class="cupons">
                 <div class="top-buttons">
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('R$50 OFF na primeira compra')">R$50 OFF na primeira compra</a>
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('20% OFF')">20% OFF</a>
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('R$10 OFF')">R$10 OFF</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('R$50 OFF na primeira compra', '50$OFF')">R$50
+                        OFF na primeira compra</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('20% OFF', '20%OFF')">20% OFF</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('R$10 OFF', '10$OFF')">R$10 OFF</a>
                 </div>
                 <div class="bottom-buttons">
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('15% OFF')">15% OFF</a>
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('FRETE GRATIS')">FRETE GRATIS</a>
-                  <a href="#" class="cupom-botao" onclick="mostrarCupom('10% OFF')">10% OFF</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('15% OFF', '15%OFF')">15% OFF</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('FRETE GRATIS', 'FRETEGRATIS')">FRETE
+                        GRÁTIS</a>
+                    <a href="#" class="cupom-botao" onclick="mostrarCupom('10% OFF', '10%OFF')">10% OFF</a>
                 </div>
-              </div>
+            </div>
         </section>
 
         <section id="duvidas" class="section5">
             <form action="#" method="post">
-            <h2 class="section5-titulo">
-                Dúvidas
-            </h2>
-            <div>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-            
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-            </div><br>
-                <textarea name="feedback" id="feedback" cols="42" rows="10" placeholder="Deixe seu comentário ou feedback..."></textarea><br>
+                <h2 class="section5-titulo">Dúvidas</h2>
+                <div class="inputs-form">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <br>
+                <textarea name="feedback" id="feedback" cols="48" rows="10"
+                    placeholder="Deixe seu comentário ou feedback...">
+                </textarea>
+                <br>
 
                 <a href="#" target="_blank" class="section5-botao">Enviar</a>
-                
+
             </form>
 
         </section>
     </main>
     <footer>
         <div class="direitosReservados">
-            © Copyright 2023 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online S.A.
-            Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP - CEP 06.020-902
+            <h6>© Copyright 2023 - iFood - Todos os direitos reservados</h6>
+            <h6>iFood com Agência de Restaurantes Online S.A.</h6>
+            <h6>Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP -</h6>
+            <h6>CEP 06.020-902</h6>
         </div>
         <div class="termos">
-            <a href="#" target="_blank">Termos e Condições</a> 
-            <a href="#" target="_blank">Privacidade</a> 
+            <a href="https://www.ifood.com.br/termos" target="_blank">Termos e Condições</a>
+            <a href="https://institucional.ifood.com.br/abrindo-a-cozinha/declaracao-privacidade-clientes/"
+                target="_blank">Privacidade</a>
         </div>
-        
+
         <div class="contatos">
             <div class="imagesfooter">
                 <a href="https://www.facebook.com/iFood" target="_blank">
@@ -183,4 +197,5 @@
         </div>
     </footer>
 </body>
+
 </html>

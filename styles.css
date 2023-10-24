@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* Styles Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #961414;
+    border-radius: 2px;
+}
 
 * {
     padding: 0;
@@ -7,8 +16,14 @@
     font-family: Montserrat;
 }
 
-html{
+html {
+    scroll-behavior: smooth;
     background: #F5F5F5;
+}
+
+header{
+    position: sticky;
+    top: 0;
 }
 
 .head {
@@ -30,6 +45,7 @@ html{
     padding: 20px 40px;
     width: 100%;
     height: 90px;
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -105,6 +121,8 @@ html{
     font-size: 1.1em;
     padding: 15px;
     max-width: 37.5em;
+    line-height: 19.5px;
+    letter-spacing: 1.5px;
 }
 
 .section1-botao {
@@ -128,9 +146,13 @@ html{
 
 /* Section 2 - Comidas mais Procuradas  */
 
+h2 {
+    font-weight: 500;
+}
+
 /* Section 3 - Restaurantes */
 
-.icones-restaurantes{
+.icones-restaurantes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,43 +160,43 @@ html{
     margin: 1.5em;
 }
 
-.icones-restaurantes img{
+.icones-restaurantes img {
     padding: 1.5em;
     width: 12em;
 }
 
 .ver-mais a {
-    text-decoration:underline;
+    text-decoration: underline;
     text-transform: uppercase;
     color: #000;
 
     margin-bottom: 1em;
     margin-right: 2em;
-    
+
     display: flex;
     justify-content: end;
 }
 
-
 /* Section 4 - Cupons */
 
-.cupons{
+.cupons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
 }
+
 .top-buttons,
 .bottom-buttons {
-  display: flex; 
-  justify-content: center; 
+    display: flex;
+    justify-content: center;
 }
+
 .cupom-botao {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     padding: 2em;
     width: 200px;
     height: 60px;
@@ -184,17 +206,18 @@ html{
     color: #ffffff;
     margin-bottom: 3em;
     margin-right: 3em;
-  }
-  .cupom-botao:hover{
+}
+
+.cupom-botao:hover {
     background-color: #e0dddd;
     border-radius: 8px;
     text-decoration: none;
     color: #E8111A;
-  }
+}
 
 /* Section 5 */
 
-.section5{
+.section5 {
     background-image: url('assents/banner02.png');
     background-size: cover;
     background-position: center;
@@ -202,7 +225,10 @@ html{
     text-align: center;
 }
 
-.section2-titulo,.section3-titulo,.section4-titulo,.section5-titulo{
+.section2-titulo,
+.section3-titulo,
+.section4-titulo,
+.section5-titulo {
     margin: 0 auto;
     text-align: center;
     font-size: 1.1em;
@@ -210,23 +236,32 @@ html{
     max-width: 37.5em;
     color: #9E050B;
 }
+
+.inputs-form input{
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
+
 .section5-botao {
     display: inline-block;
-    padding: .3em 2em;
-   margin-top: 1em;
+    padding: .5em 3em;
+    margin-top: 1em;
     background-color: #E8111A;
     border-radius: 8px;
     text-decoration: none;
     color: #ffffff;
     margin-bottom: 3em;
 }
+
 .section5-botao:hover {
     background-color: #e0dddd;
     border-radius: 8px;
     text-decoration: none;
     color: #E8111A;
 }
-::placeholder{
+
+::placeholder {
     font-size: 1.1em;
     padding: 15px;
 }
@@ -235,24 +270,53 @@ textarea {
     resize: none;
 }
 
-
 /* Footer */
 
-footer{
-    background: #9E050B;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 120px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    background: #9E050B;
+    padding: 1.2rem;
 }
-.direitosReservados {
+
+footer .direitosReservados {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer .direitosReservados h6 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+footer .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+footer .termos a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer .contatos{
+    display: flex;
+    gap: 1rem;
+}
+
+/* .direitosReservados {
     color: #ffffff;
     width: 30%;
-    margin-left: 20px; 
-    
+    margin-left: 20px;
+}
 
-  }
 .imagesfooter {
     display: inline-block;
     padding: 8px;
@@ -263,4 +327,4 @@ footer{
     text-decoration: none;
     color: #ffffff;
     margin-left: 30px;
-} 
+} */
