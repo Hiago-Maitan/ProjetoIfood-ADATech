@@ -184,3 +184,7 @@ footer{
     color: #ffffff;
     margin-left: 30px;
 }
+
+textarea {
+    resize: none;
+}
