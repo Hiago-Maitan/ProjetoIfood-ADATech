@@ -1,9 +1,10 @@
 # ProjetoIfood-ADATech
- Entrega de projeto em grupo do curso ADA Tech Front-End
- Modulo I - Front End Estático
 
+####  Entrega de projeto em grupo do curso ADA Tech Front-End
+#### Modulo I - Front End Estático
 
- Grupo: 
+<br><br>
+ Integrantes: 
  - Eric Galvão
  - Hiago Maitan
  - Max Castro
