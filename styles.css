@@ -7,6 +7,10 @@
     font-family: Montserrat;
 }
 
+html{
+    background: #F5F5F5;
+}
+
 .head {
     background: #9E050B;
     width: 100%;
@@ -75,7 +79,7 @@
     margin-left: -30px;
 }
 
-/* Section 1  */
+/* Section 1  - Banner inicial */
 
 .section1-conteudo {
     text-align: center;
@@ -120,7 +124,76 @@
     text-decoration: none;
     color: #E8111A;
 }
+
+
+/* Section 2 - Comidas mais Procuradas  */
+
+/* Section 3 - Restaurantes */
+
+.icones-restaurantes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1.5em;
+}
+
+.icones-restaurantes img{
+    padding: 1.5em;
+    width: 12em;
+}
+
+.ver-mais a {
+    text-decoration:underline;
+    text-transform: uppercase;
+    color: #000;
+
+    margin-bottom: 1em;
+    margin-right: 2em;
+    
+    display: flex;
+    justify-content: end;
+}
+
+
+/* Section 4 - Cupons */
+
+.cupons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.top-buttons,
+.bottom-buttons {
+  display: flex; 
+  justify-content: center; 
+}
+.cupom-botao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2em;
+    width: 200px;
+    height: 60px;
+    background-color: #E8111A;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3em;
+    margin-right: 3em;
+  }
+  .cupom-botao:hover{
+    background-color: #e0dddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #E8111A;
+  }
+
 /* Section 5 */
+
 .section5{
     background-image: url('assents/banner02.png');
     background-size: cover;
@@ -157,7 +230,14 @@
     font-size: 1.1em;
     padding: 15px;
 }
+
+textarea {
+    resize: none;
+}
+
+
 /* Footer */
+
 footer{
     background: #9E050B;
     width: 100%;
@@ -183,42 +263,4 @@ footer{
     text-decoration: none;
     color: #ffffff;
     margin-left: 30px;
-}
-
-textarea {
-    resize: none;
-}
-.cupons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-.top-buttons,
-.bottom-buttons {
-  display: flex; 
-  justify-content: center; 
-}
-.cupom-botao {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 2em;
-    width: 200px;
-    height: 60px;
-    background-color: #E8111A;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #ffffff;
-    margin-bottom: 3em;
-    margin-right: 3em;
-  }
-  .cupom-botao:hover{
-    background-color: #e0dddd;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #E8111A;
-  }
-  
+} 
