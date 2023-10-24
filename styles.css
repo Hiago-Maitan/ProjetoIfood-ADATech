@@ -21,14 +21,14 @@ html {
     background: #F5F5F5;
 }
 
-header{
+header {
     position: sticky;
     top: 0;
 }
 
-figure {
+/* figure {
 
-}
+} */
 
 .head {
     background: #9E050B;
@@ -99,6 +99,10 @@ figure {
     margin-left: -30px;
 }
 
+main {
+    padding: 0 1rem;
+}
+
 /* Section 1  - Banner inicial */
 
 .section1-conteudo {
@@ -146,21 +150,23 @@ figure {
     text-decoration: none;
     color: #E8111A;
 }
+
 /* container das comidas mais procuradas */
 
 .container {
     display: flex;
-    background-color: #be9898;
- 
+    background-color: #E2D8D8;
+
     margin: 10px;
     border-radius: 10px;
-    width: 400px; 
+    border: 1px solid #AB8E8E;
+    width: 400px;
     height: 150px;
 }
 
 .image {
     max-width: 50%;
-    height: 150px; 
+    height: 150px;
 }
 
 figure {
@@ -201,6 +207,8 @@ h2 {
 
 .icones-restaurantes {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -226,9 +234,14 @@ h2 {
 
 /* Section 4 - Cupons */
 
+.section4 {
+    border: 1px solid blue;
+}
+
 .cupons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -280,11 +293,11 @@ h2 {
     text-align: center;
     font-size: 1.1em;
     padding: 15px;
-    max-width: 37.5em;
+    /* max-width: 37.5em; */
     color: #9E050B;
 }
 
-.inputs-form input{
+.inputs-form input {
     padding: 0.5rem;
     border: 1px solid black;
     border-radius: 0.2rem;
@@ -353,7 +366,7 @@ footer .termos a {
     text-decoration: none;
 }
 
-footer .contatos{
+footer .contatos {
     display: flex;
     gap: 1rem;
 }
@@ -375,3 +388,13 @@ footer .contatos{
     color: #ffffff;
     margin-left: 30px;
 } */
+
+@media(max-width:895px) {
+    footer .direitosReservados h6{
+        font-size: 0.6rem;
+    }
+
+    footer .termos a{
+        font-size: 0.8rem;
+    }
+}
