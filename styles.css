@@ -188,3 +188,37 @@ footer{
 textarea {
     resize: none;
 }
+.cupons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.top-buttons,
+.bottom-buttons {
+  display: flex; 
+  justify-content: center; 
+}
+.cupom-botao {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2em;
+    width: 200px;
+    height: 60px;
+    background-color: #E8111A;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3em;
+    margin-right: 3em;
+  }
+  .cupom-botao:hover{
+    background-color: #e0dddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #E8111A;
+  }
+  
