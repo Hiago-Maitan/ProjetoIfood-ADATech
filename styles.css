@@ -49,7 +49,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.nav .logo-navbar{
+.nav .logo-navbar {
     margin-right: 1rem;
 }
 
@@ -382,7 +382,6 @@ footer .contatos {
     }
 
     #header {
-        /* background: transparent; */
         transition: 1s;
     }
 
@@ -390,12 +389,12 @@ footer .contatos {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 128px;
         right: 0px;
         background: #1098ec;
         transition: .6s;
         z-index: 1000;
-        height: 0px;
+        height: 0;
         visibility: hidden;
         overflow-y: hidden;
     }
@@ -423,12 +422,12 @@ footer .contatos {
 
 /* Tirar o input search */
 
-@media(max-width:923px){
-    .search-container{
+@media(max-width:923px) {
+    .search-container {
         display: none;
     }
 
-    .containerLinks li{
+    .containerLinks li {
         display: inline-block;
     }
 }
@@ -443,4 +442,27 @@ footer .contatos {
     footer .termos a {
         font-size: 0.8rem;
     }
+}
+
+@media(max-width:416px) {
+    footer .direitosReservados h6 {
+        font-size: 6px;
+    }
+
+    footer .termos {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    footer .termos a {
+        font-size: 0.5rem;
+
+    }
+
+    footer .contatos {
+        display: flex;
+        gap: 0.2rem;
+    }
+
 }
