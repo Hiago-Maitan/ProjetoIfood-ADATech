@@ -431,6 +431,15 @@ footer .contatos {
     }
 }
 
+/* Responsividade Section 1 */
+
+@media(min-width:320px) {
+
+    .section1-paragrafo {
+        margin-top: 3em;
+    }
+}
+
 /* Responsividade Footer */
 
 @media(max-width:895px) {
