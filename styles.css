@@ -26,10 +26,6 @@ header {
     top: 0;
 }
 
-/* figure {
-
-} */
-
 .head {
     background: #9E050B;
     width: 100%;
@@ -229,22 +225,28 @@ article figure .descricao {
 /* Section 4 - Cupons */
 
 .section4 {
-    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .cupons .buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .cupons {
+    width: 60%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.top-buttons,
-.bottom-buttons {
-    display: flex;
-    justify-content: center;
 }
 
 .cupom-botao {
@@ -259,7 +261,9 @@ article figure .descricao {
     text-decoration: none;
     color: #e0dddd;
     margin-bottom: 3em;
-    margin-right: 3em;
+    /* margin-right: 3em; */
+    border: none;
+    cursor: pointer;
 }
 
 .cupom-botao:hover {
@@ -290,13 +294,14 @@ article figure .descricao {
     color: #9E050B;
 }
 
-.section5 input, .section5 textarea {
+.section5 input,
+.section5 textarea {
     background-color: #ebeaea;
     border-radius: 0.2rem;
     border: 1px solid rgb(168, 70, 70);
 }
 
-.section5 input{
+.section5 input {
     padding: 0.5rem;
 }
 
