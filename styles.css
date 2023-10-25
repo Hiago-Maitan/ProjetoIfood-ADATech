@@ -257,7 +257,6 @@ article figure .descricao {
     text-decoration: none;
     color: #e0dddd;
     margin-bottom: 3em;
-    /* margin-right: 3em; */
     border: none;
     cursor: pointer;
 }
@@ -435,6 +434,7 @@ footer .contatos {
 /* Responsividade Footer */
 
 @media(max-width:895px) {
+
     footer .direitosReservados h6 {
         font-size: 0.6rem;
     }
@@ -445,19 +445,26 @@ footer .contatos {
 }
 
 @media(max-width:416px) {
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
     footer .direitosReservados h6 {
         font-size: 6px;
     }
 
     footer .termos {
         display: flex;
-        flex-direction: row;
-        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
     }
 
     footer .termos a {
         font-size: 0.5rem;
-
     }
 
     footer .contatos {
