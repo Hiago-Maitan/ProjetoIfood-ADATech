@@ -29,7 +29,7 @@ header {
 .head {
     background: #9E050B;
     width: 100%;
-    height: 37px;
+    height: 8vh;
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ header {
     justify-content: space-between;
     padding: 20px 40px;
     width: 100%;
-    height: 90px;
+    height: 15vh;
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -53,15 +53,32 @@ header {
     margin-right: 1rem;
 }
 
-#btn-mobile {
+.mobile-menu {
     display: none;
+    cursor: pointer;
 }
 
-.containerLinks a {
+.nav .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #070707;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.containerLinks ul {
+    display: flex;
+    list-style: none;
+}
+
+.container ul li {
+    display: flex;
+}
+
+.containerLinks ul li a {
     display: inline-block;
     color: black;
     margin-right: 4rem;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -369,54 +386,76 @@ footer .contatos {
 
 /* Responsividade da Navbar */
 
+@media(max-width:999px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 @media(max-width: 763px) {
-    #btn-mobile {
-        display: flex;
-        cursor: pointer;
+
+    header .head {
+        padding-bottom: 33px;
     }
 
-    #header.active {
-        background: #1098ec;
-        transition: 0.1s;
-    }
-
-    #header {
-        transition: 1s;
-    }
-
-    #menu {
-        display: block;
+    .nav-list {
         position: absolute;
-        width: 100%;
-        top: 128px;
-        right: 0px;
-        background: #1098ec;
-        transition: .6s;
-        z-index: 1000;
-        height: 0;
-        visibility: hidden;
-        overflow-y: hidden;
+        top: 23vh;
+        right: 0;
+        width: 50vw;
+        height: 77vh;
+        background: #9E050B;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
     }
 
-    #nav.active #menu {
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
     }
 
-    #menu a {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 0;
-        margin: 0 1rem;
+    .nav-list li a {
         font-weight: 500;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
 
-    #menu a:hover {
-        padding: 1.3rem 0;
-        transition: .1s;
+    .nav-list li a:hover {
+        border-bottom: 1px solid rgb(253, 253, 253);
     }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
 /* Tirar o input search */

@@ -12,7 +12,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="shortcut icon" href="assents/ifood-icone.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 </head>
 
 <body>
@@ -46,13 +46,27 @@
                     <img src="./assents/logo-ifood.svg" class="imgNav" alt="ifood logo">
                 </a>
 
-                <i id="btn-mobile" class="material-icons">menu</i>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
 
                 <div class="containerLinks" id="menu">
-                    <a href="#comidas">Comidas</a>
-                    <a href="#restaurantes">Restaurantes</a>
-                    <a href="#cupons">Cupons</a>
-                    <a href="#duvidas">Dúvidas</a>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#comidas">Comidas</a>
+                        </li>
+                        <li>
+                            <a href="#restaurantes">Restaurantes</a>
+                        </li>
+                        <li>
+                            <a href="#cupons">Cupons</a>
+                        </li>
+                        <li>
+                            <a href="#duvidas">Dúvidas</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="search-container">
                     <input type="text" class="search" placeholder="Buscar">
@@ -242,13 +256,14 @@
 
     <!-- Footer -->
     <footer>
+
         <div class="direitosReservados">
             <h6>© Copyright 2023 - iFood - Todos os direitos reservados</h6>
             <h6>iFood com Agência de Restaurantes Online S.A.</h6>
             <h6>Avenida dos Autonomistas, nº 1496, Vila Yara, Osasco/SP -</h6>
             <h6>CEP 06.020-902</h6>
         </div>
-        
+
         <div class="termos">
             <a href="https://www.ifood.com.br/termos" target="_blank">Termos e Condições</a>
             <a href="https://institucional.ifood.com.br/abrindo-a-cozinha/declaracao-privacidade-clientes/"
@@ -280,7 +295,7 @@
     </footer>
 
     <script src="./scripts/cupons.js"></script>
-    <script src="./scripts/menuHamburguer.js"></script>
+    <script src="teste/mobileNavBar.js"></script>
 </body>
 
 </html>
