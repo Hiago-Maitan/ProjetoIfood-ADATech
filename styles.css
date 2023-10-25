@@ -403,7 +403,7 @@ footer .contatos {
         top: 23vh;
         right: 0;
         width: 50vw;
-        height: 77vh;
+        height: 100vh;
         background: #9E050B;
         flex-direction: column;
         align-items: center;
@@ -412,11 +412,14 @@ footer .contatos {
         transition: transform 0.3s ease-in;
     }
 
+    .nav-list ul {
+    }
+    
     .nav-list li {
-        margin-left: 0;
+        margin-left: 30%;
         opacity: 0;
     }
-
+    
     .nav-list li a {
         font-weight: 500;
     }
