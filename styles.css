@@ -21,6 +21,11 @@ html {
     background: #F5F5F5;
 }
 
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -389,11 +394,18 @@ footer .contatos {
 @media(max-width: 763px) {
 
     body {
+        overflow-y: hidden;
         overflow-x: hidden;
     }
 
     header .head {
-        padding-bottom: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerLinks{
+        color: white;
     }
 
     .nav-list {
