@@ -40,23 +40,26 @@
             </div>
         </div>
 
-        <nav class="nav">
-            <a href="https://www.ifood.com.br/" target="_blank">
-                <img src="./assents/logo-ifood.svg" class="imgNav" alt="ifood logo">
-            </a>
-            <div class="containerLinks">
-                <ul>
-                    <li><a href="#comidas">Comidas</a></li>
-                    <li><a href="#restaurantes">Restaurantes</a></li>
-                    <li><a href="#cupons">Cupons</a></li>
-                    <li><a href="#duvidas">Dúvidas</a></li>
-                </ul>
-            </div>
-            <div class="search-container">
-                <input type="text" class="search" placeholder="Buscar">
-                <div class="search-icon"></div>
-            </div>
-        </nav>
+        <div id="header">
+            <nav class="nav" id="nav">
+                <a class="logo-navbar" href="https://www.ifood.com.br/" target="_blank">
+                    <img src="./assents/logo-ifood.svg" class="imgNav" alt="ifood logo">
+                </a>
+
+                <i id="btn-mobile" class="material-icons">menu</i>
+
+                <div class="containerLinks" id="menu">
+                    <a href="#comidas">Comidas</a>
+                    <a href="#restaurantes">Restaurantes</a>
+                    <a href="#cupons">Cupons</a>
+                    <a href="#duvidas">Dúvidas</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search" placeholder="Buscar">
+                    <div class="search-icon"></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section class="section1">
@@ -276,6 +279,7 @@
     </footer>
 
     <script src="./scripts/cupons.js"></script>
+    <script src="./scripts/menuHamburguer.js"></script>
 </body>
 
 </html>

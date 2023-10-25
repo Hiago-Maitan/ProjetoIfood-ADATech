@@ -49,28 +49,24 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.containerLinks ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    list-style: none;
+.nav .logo-navbar{
+    margin-right: 1rem;
 }
 
-.containerLinks li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 46px;
-}
-
-.containerLinks li:hover {
-    border-bottom: 1px solid #9E050B;
+#btn-mobile {
+    display: none;
 }
 
 .containerLinks a {
-    text-decoration: none;
+    display: inline-block;
     color: black;
+    margin-right: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.containerLinks a:hover {
+    border-bottom: 1px solid #9E050B;
 }
 
 .search-container {
@@ -372,23 +368,72 @@ footer .contatos {
     gap: 1rem;
 }
 
-/* .direitosReservados {
-    color: #ffffff;
-    width: 30%;
-    margin-left: 20px;
+/* Responsividade da Navbar */
+
+@media(max-width: 763px) {
+    #btn-mobile {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #header.active {
+        background: #1098ec;
+        transition: 0.1s;
+    }
+
+    #header {
+        /* background: transparent; */
+        transition: 1s;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #1098ec;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        font-weight: 500;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #menu a:hover {
+        padding: 1.3rem 0;
+        transition: .1s;
+    }
 }
 
-.imagesfooter {
-    display: inline-block;
-    padding: 8px;
-    margin-right: 20px;
+/* Tirar o input search */
+
+@media(max-width:923px){
+    .search-container{
+        display: none;
+    }
+
+    .containerLinks li{
+        display: inline-block;
+    }
 }
 
-.termos a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-left: 30px;
-} */
+/* Responsividade Footer */
 
 @media(max-width:895px) {
     footer .direitosReservados h6 {
