@@ -389,8 +389,7 @@ footer .contatos {
 @media(max-width: 763px) {
 
     body {
-        /* overflow-y: hidden; */
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     header .head {
@@ -409,7 +408,7 @@ footer .contatos {
         right: 0;
         width: 100vw;
         height: 100%;
-        background: #9E050B;
+        background: #ffffff00;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -435,6 +434,7 @@ footer .contatos {
     }
 
     .nav-list.active {
+        background: #9E050B;
         transform: translateX(0);
     }
 }
